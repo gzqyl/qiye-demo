@@ -1,0 +1,53 @@
+@charset "utf-8";
+/* CSS Document */
+/*banner*/
+.banner{ width:100%; height:499px; position:relative; overflow:hidden;}
+.banner ul li img{ position:absolute; left:50%; top:0; margin-left:-960px;}
+.banner #last{ position:absolute; left:50%; top:50%; margin:-35px 0 0 -520px;}
+.banner #next{ position:absolute; left:50%; top:50%; margin:-35px 0 0 520px;}
+
+/*内容区域相同部分*/
+.container{ width:1200px; margin:0 auto; padding-top:25px;}
+.container .title{ text-align:center; width:200px; height:50px; margin:0 auto 25px; border-bottom:1px #c9c9c9 solid;}
+.container .title h2{ font-weight:normal; font-size:14px; line-height:23px;}
+.container .title h2 span{ color:#666666;}
+
+/*新闻资讯*/
+.news{ width:100%; background:#f2f2f2; clear:both; padding-bottom:25px;}
+.news .container .content{ width:1200px;; margin-bottom:34px; overflow:hidden;}
+.news img{ float:left; margin-right:80px;}
+.news ul{ float:left; padding-top:30px;}
+.news ul li{ color:#999; font-size:14px; margin-bottom:60px; position:relative;}
+.news ul li h3 a{ font-size:14px; color:#333; font-weight:normal;}
+.news ul li p{ line-height:22px; width:515px;}
+.news ul li .on{ color:#333333; position:absolute; right:0; bottom:4px;}
+.news ul li span{ display:block; width:60px; height:50px; background:#3763ad; text-align:center; font-size:12px; padding-top:10px; color:#b9b7b7; float:left; margin-right:32px;}
+.news ul li span i{ font-style:normal; font-size:18px;}
+.news .more{ width:87px; height:24px; border:1px #adacac solid; border-radius:8px; behavior:url(CSS/PIE.htc); margin:0 auto; text-align:center; line-height:24px; font-size:14px;}
+.news .container .more a{ color:#b9b7b7; display:block;}
+
+/*产品展示*/
+.container .products{ width:100%; overflow:hidden;}
+.container .products ul li{ float:left; margin:0 60px 70px 0; position:relative;}
+
+/*公司介绍*/
+.company{ width:100%; background:#f2f2f2;}
+.company .main_bg{ width:100%; overflow:hidden; padding-bottom:75px;}
+.company .main_bg img{ float:left; margin-right:65px;}
+.company .main_bg .content{ width:350px; float:left; font-size:14px; color:#999; line-height:24px; padding-top:60px;}
+.company .main_bg .content p{ text-indent:2em; margin-bottom:20px;}
+.company .main_bg .content a{ display:block; width:70px; height:22px; color:#666; border:1px #666 solid; line-height:22px; text-align:center; margin:0 auto; font-size:12px;}
+
+/*联系我们*/
+.container .contact_main{ width:100%; margin:0 auto; overflow:hidden; padding-bottom:22px;}
+.container .contact_main ul{ float:left;}
+.container .contact_main ul li{ width:490px; height:68px; border:1px #f2f2f2 solid; padding:35px 0 0 114px; margin-bottom:8px;}
+.container .contact_main ul li img{ float:left; margin-right:15px;}
+.container .contact_main ul li dl dt{ font-size:14px; color:#666; display:block; padding-top:10px;}
+.container .contact_main ul li dl dd{ display:block; font-style:normal; font-size:12px; color:#999;}
+.container .contact_main .map{ float:left;}
+
+/*返回顶部*/
+#toTop{ position:fixed; bottom:80px; right:50%; margin-right:-650px; display:none;}
+
+

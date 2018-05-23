@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* CSS Document */
+/*banner*/
+.banner{ width:100%; height:499px; position:relative; overflow:hidden;}
+.banner ul li img{ position:absolute; left:50%; top:0; margin-left:-960px;}
+.banner #last{ position:absolute; left:50%; top:50%; margin:-35px 0 0 -520px;}
+.banner #next{ position:absolute; left:50%; top:50%; margin:-35px 0 0 520px;}
+
+/*标题*/
+.title_style .title h2{ background:#6b93d6 url(../images/title_bg.jpg) no-repeat 263px 80px;;}
+.title_style .title ul{ position:absolute; left:550px; bottom:6px;}
+.title_style .title ul li a{ margin-right:70px;}
+
+/*主体*/
+.main .pic{ width:100%; height:auto; overflow:hidden; margin-bottom:10px;}
+.main .pic ul li{ width:265px; float:left; padding:15px 11px 0; text-align:center;}
+.main .pic ul li a{ color:#666; font-size:14px; font-weight:normal; line-height:45px; display:block;}
+.main .pic ul li:hover{ color:#f2f2f2; background:url(../images/prc_bg.jpg);}
+.main .pages{ width:1200px; height:20px; margin-bottom:18px;margin-top: 18px;}
+.main .pages ul{ width:320px; margin:0 auto;}
+.main .pages ul li{ float:left; text-align:center; font-size:14px; line-height:13px; border:#FFF 1px solid; margin:0 2px;}
+.main .pages ul li:hover,.main .pages ul li.on{ border:#c9c9c9 1px solid;}
+.main .pages a{ color:#999; display:block; text-align:center; padding:0 3px;}
+
+/*返回顶部*/
+#toTop{ position:fixed; bottom:80px; right:50%; margin-right:-570px; display:none;}

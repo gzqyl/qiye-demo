@@ -1,0 +1,7 @@
+#db qiye
+#table admin
+create table if not exists admin(
+id int(10) auto_increment primary key,
+name varchar(255) not null,
+passwd varchar(255) not null
+);

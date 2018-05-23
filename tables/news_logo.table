@@ -1,0 +1,5 @@
+#db qiye
+#table news_logo
+create table if not exists news_logo(
+file varchar(1000) not null comment 'news_logo文件的地址'
+);

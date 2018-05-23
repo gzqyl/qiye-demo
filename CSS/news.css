@@ -1,0 +1,27 @@
+@charset "utf-8";
+/* CSS Document */
+/*banner*/
+.banner{ width:100%; height:499px; position:relative; overflow:hidden;}
+.banner ul li img{ position:absolute; left:50%; top:0; margin-left:-960px;}
+.banner #last{ position:absolute; left:50%; top:50%; margin:-35px 0 0 -520px;}
+.banner #next{ position:absolute; left:50%; top:50%; margin:-35px 0 0 520px;}
+
+/*标题*/
+.title_style .title h2{ background:#6b93d6 url(../images/title_bg.jpg) no-repeat 248px 80px;;}
+.title_style .title ul{ position:absolute; left:700px; bottom:6px;}
+.title_style .title ul li a{ margin-right:110px;}
+
+/*主体*/
+.main h2 a:hover{color: #7A9EDA;}
+.main .news ul{ margin:0 0 40px 40px;;}
+.main .news ul li{ overflow: hidden; margin-bottom:46px;}
+.main .news ul li:hover a{color: #7A9EDA;}
+.main .news ul li img{ float:left; margin-right:30px;}
+.main .news ul li h3 a{ color:#333; font-size:14px; font-weight:normal; line-height:30px;}
+.main .news ul li span{ font-size:24px; color:#ccc;}
+.main .news ul li p{ color:#999; font-size:14px; margin-top:10px; line-height:26px; width:1130px;}
+.main .pages{ width:1200px; height:20px; margin-bottom:18px;}
+.main .pages ul{ width:320px; margin:0 auto;}
+.main .pages ul li{ float:left; text-align:center; font-size:14px; line-height:13px; border:#FFF 1px solid; margin:0 2px;}
+.main .pages ul li:hover,.main .pages ul li.on{ border:#c9c9c9 1px solid;}
+.main .pages a{ color:#999; display:block; text-align:center; padding:0 3px;}

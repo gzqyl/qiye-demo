@@ -1,0 +1,27 @@
+@charset "utf-8";
+/* CSS Document */
+/*banner*/
+.banner{ width:100%; height:499px; position:relative; overflow:hidden;}
+.banner ul li img{ position:absolute; left:50%; top:0; margin-left:-960px;}
+.banner #last{ position:absolute; left:50%; top:50%; margin:-35px 0 0 -520px;}
+.banner #next{ position:absolute; left:50%; top:50%; margin:-35px 0 0 520px;}
+
+/*标题*/
+.title_style .title h2{ background:#6b93d6 url(../images/title_bg.jpg) no-repeat 233px 80px;}
+
+/*主体*/
+.main{}
+.main h2 a:hover{color: #7A9EDA; }
+.main .map{ margin:0 0 50px 40px;}
+.main .message{ width:1120px; height:auto; margin:0 auto; background:#f2f2f2; position:relative; overflow:hidden; padding-bottom:16px; margin-bottom:36px;}
+.main .message .message_left{ width:300px; padding:40px 0 0 15px; line-height:40px; font-size:14px; color:#666; float:left;}
+.main .message .message_right{ width:430px; float:right; margin:60px 60px 0 0;}
+.main .message .message_right form table tr td input{ width:410px; height:23px; line-height:23px; padding-left:6px; margin-bottom:4px; color:#CCC; border:1px #f2f2f2 solid;}
+.main .message .message_right form table tr td textarea{ width:410px; height:135px; border:1px #f2f2f2 solid; padding-left:6px; resize:none; overflow-y:hidden; line-height:23px; color:#CCC;}
+.main .message .message_right form table tr td input#on{ width:47px; height:18px; position:absolute; right:280px; bottom:13px; line-height:18px; padding-left:10px;}
+.main .message .message_right form table tr td input.pro{ width:78px; height:18px; position:absolute; right:176px; bottom:18px; margin:0;}
+.main .message .message_right form table tr td input.om{ width:69px; height:21px; text-align:center; line-height:18px; padding:0; float:right; margin:15px 14px 0 0; cursor:pointer; color:#666; background:url(../images/submit_bg.jpg);}
+
+/*返回顶部*/
+#toTop{ position:fixed; bottom:80px; right:50%; margin-right:-600px; display:none;}
+

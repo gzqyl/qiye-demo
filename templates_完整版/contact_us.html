@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>联系我们</title>
+<link href="CSS/contact_us.css" type="text/css" rel="stylesheet" />
+<link href="CSS/base.css" type="text/css" rel="stylesheet" />
+<script src="JS/jquery-1.12.4.min.js"></script>
+<script src="JS/contact_us.js"></script>
+<script src="JS/base.js"></script>
+</head>
+
+<body>
+<!--头部-->
+<div class="header">
+	<div class="logo">
+    	<a href="index.html"><img src="images/logo.png" /></a>
+	</div>
+    <div class="nav">
+    	<ul>
+        	<li><a href="index.html">首页</a></li>
+            <li><a href="about_us.html">关于我们</a></li>
+            <li><a href="news.html">新闻中心</a></li>
+            <li class="on"><a href="contact_us.html">联系我们</a></li>
+        </ul>
+    </div>
+</div>
+
+<!--banner-->
+<div class="banner">
+	<ul>
+    	<li><img src="images/banner1.jpg" /></li>
+        <li><img src="images/banner2.jpg" /></li>
+        <li><img src="images/banner3.jpg" /></li>
+    </ul>
+    <a id="last" href="javascript:"><img src="images/last_bg.png" /></a>
+    <a id="next" href="javascript:"><img src="images/next_bg.png" /></a>
+</div>
+
+<!--标题-->
+<div class="title_style">
+  <div class="title">
+        <h2>
+            联系我们
+            <span>CONTACT US</span>
+        </h2>
+    </div>
+</div>
+
+<!--主体-->
+<div class="main">
+	<h2>&nbsp;</h2>
+    <div class="map">
+        	<div style=" width:1120px; height:275px; border:#ccc solid 1px; font-size:12px" id="map"></div>
+        </div>
+        <script type="text/javascript" src="http://api.map.baidu.com/api?v=1.4"></script>
+        <script src="JS/map.js"></script>
+    <div class="message">
+    	<div class="message_left">
+        	<p>公司地址：北京市通州区台湖镇前营工业区95号</p>
+            <p>公司电话：86-010-87715898</p>
+            <p>电子邮箱：bjmc2008@126.com</p>
+            <p>联系人：刘先生</p>
+            <p>手机号码：13910278888</p>
+        </div>
+        <div class="message_right">
+        	<form>
+                <table>
+                    <tr>
+                        <td><input type="text" value="标题" id="title"/></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" value="姓名" id="name"/></td>
+                    </tr>
+                    <tr>
+                        <td><textarea>请在这里留言</textarea></td>
+                    </tr>
+                    <tr>
+                    	<td><input type="text" value="验证码" id="on"/></td>
+                    </tr>
+                    <tr>
+                        <td><input type="image" src="images/submit_pic.jpg" class="pro"/></td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" value="提交" class="om" /></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!--返回顶部-->
+<a href="javascript:" id="toTop"><img src="images/icon4.png" /></a>
+
+<!--底部-->
+<div class="footer">
+	<p>泸ICP备08021741号　泸公安网备31011202003009号<br />
+       Copyright&copy;2008-2017  北京正信永辉国际酒店用品有限公司版权所有</p>
+</div>
+</body>
+</html>

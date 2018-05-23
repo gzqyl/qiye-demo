@@ -1,0 +1,20 @@
+.header{
+	background-color:black;color:white;padding:10px;
+}
+
+.welcome{
+	font-weight:bold;margin-left:100px;display:inline-block;
+}
+
+.welcome-right{
+	float:right;padding-right:100px;
+}
+
+.news-title{
+	font-size:12px;font-weight:bold;
+}
+
+.page-href{
+
+	color:gray !important;
+}

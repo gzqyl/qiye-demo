@@ -1,0 +1,6 @@
+#db qiye
+#table company
+create table if not exists company(
+home_img varchar(1000) not null comment 'Ê×Ò³Í¼Æ¬',
+content varchar(10000) comment 'ÏêÇéÄÚÈÝ'
+);

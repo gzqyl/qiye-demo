@@ -1,0 +1,35 @@
+@charset "utf-8";
+/* CSS Document */
+/*banner*/
+.banner{ width:100%; height:499px; position:relative; overflow:hidden;}
+.banner ul li img{ position:absolute; left:50%; top:0; margin-left:-960px;}
+.banner #last{ position:absolute; left:50%; top:50%; margin:-35px 0 0 -520px;}
+.banner #next{ position:absolute; left:50%; top:50%; margin:-35px 0 0 520px;}
+
+/*标题*/
+.title_style .title h2{ background:#6b93d6 url(../images/title_bg.jpg) no-repeat 263px 80px;;}
+.title_style .title ul{ position:absolute; left:550px; bottom:6px;}
+.title_style .title ul li a{ margin-right:70px;}
+
+/*主体*/
+.main .container{width: 812px;margin: 0 auto;overflow: hidden;}
+.main .big_left{ float:left; margin-right:132px; margin-bottom:45px;}
+.main .content{ width:200px; float:left; margin-top:65px;}
+.main h2 a:hover{color: #7A9EDA;}
+.main .content h3{ width:100%; height:29px; line-height:30px; color:#666; border-bottom:1px #CCC solid; margin-bottom:10px; font-size:14px; font-weight:normal;}
+.main .content table tr td{ line-height:38px; color:#999; font-size:12px;}
+.main .details{ width:1200px;; text-align:center; clear:both; overflow:hidden; margin-bottom:30px;}
+.main .details h4{ color:#333; font-size:14px; line-height:44px;}
+.main .details .big_pic img{ width:556px; height:436px;}
+.main .details ul{ width:680px; margin:20px auto;}
+.main .details ul li{ float:left; margin-right:14px; position:relative; cursor:pointer;}
+.main .details ul li a{ width:154px; height:135px; position:absolute; left:0; top:0; z-index:3;}
+.main .details ul li img{ width:154px; height:135px;}
+.main .details ul li i{ width:154px; height:135px; background:#000; opacity:0.3; filter:alpha(opacity=30); position:absolute; left:0; top:0; z-index:2;}
+.main .details ul li i.on,.main .details ul li:hover i{ display:none;}
+.main .flip{ margin:50px 15px ;clear: both;}
+.main .flip a{ color:#333;font-size:14px; line-height:24px;color:#666; margin-right:5px;}
+.main .flip a:hover{color: #7A9EDA;}
+
+/*返回顶部*/
+#toTop{ position:fixed; bottom:80px; right:50%; margin-right:-650px; display:none;}

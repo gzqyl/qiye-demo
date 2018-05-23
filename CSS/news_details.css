@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* CSS Document */
+/*banner*/
+.banner{ width:100%; height:499px; position:relative; overflow:hidden;}
+.banner ul li img{ position:absolute; left:50%; top:0; margin-left:-960px;}
+.banner #last{ position:absolute; left:50%; top:50%; margin:-35px 0 0 -520px;}
+.banner #next{ position:absolute; left:50%; top:50%; margin:-35px 0 0 520px;}
+
+/*标题*/
+.title_style .title h2{ background:#6b93d6 url(../images/title_bg.jpg) no-repeat 248px 80px;;}
+.title_style .title ul{ position:absolute; left:700px; bottom:6px;}
+.title_style .title ul li a{ margin-right:110px;}
+
+/*主体*/
+.main h2 a:hover{color: #7A9EDA;}
+.main h3{ font-size:24px; font-weight:normal; color:#333; text-align:center;}
+.main h4{ text-align:center; border-bottom:1px #CCCCCC solid; margin-bottom:20px;}
+.main h4 span{ font-size:12px; color:#666; margin:30px; font-weight:normal;}
+.main img{ width:634px; height:355px; position:relative; left:50%; top:0px; margin:0 0 30px -317px;}
+.main p{ width:1010px; text-indent:2em; font-size:14px; color:#666; line-height:25px; margin:0 auto 10px;}
+.main .flip{ margin:50px 0 15px 125px;}
+.main .flip a{ color:#333;font-size:14px; line-height:24px;color:#666; margin-right:5px;}
+.main .flip a:hover{color: #7A9EDA;}

@@ -1,0 +1,5 @@
+#db qiye
+#table banner
+create table if not exists banner(
+file varchar(1000) not null comment 'banner文件的地址'
+);

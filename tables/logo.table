@@ -1,0 +1,5 @@
+#db qiye
+#table logo
+create table if not exists logo(
+file varchar(1000) not null comment 'logo文件的地址'
+);
