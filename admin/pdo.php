@@ -30,3 +30,26 @@
 
 	}
 
+	function hasInfoOne($name){
+
+		global $pdo;
+
+		$sql = "select count(*) as num from info where info_name = '{$name}'";
+
+		$res = $pdo->query($sql);
+
+		foreach($res as $v){
+
+			if($v['num'] > 0){
+
+				return true;
+
+			}
+
+		}
+
+		return false;
+
+
+	}
+

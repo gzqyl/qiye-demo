@@ -11,6 +11,8 @@
 
 	$content = urldecode($_POST['content']);
 
+	$about = $_POST['about'];
+
 	//引入pdo文件
 
 	include_once 'pdo.php';
@@ -19,8 +21,23 @@
 
 	$time = date("Y-m-d H:i:s",time()); //发布的时间
 
-	//使用sql语句 insert 完成新闻的增加
-	$sql = "insert into news(title,content,uid,publish_time) values('{$title}','{$content}','{$uid}','{$time}')";
+	$tupian_id = time();
+
+	$file = '/admin/images/news/tupian_'.$tupian_id.strrchr($_FILES['tupian']['name'],'.');
+
+	if(is_uploaded_file($_FILES['tupian']['tmp_name'])){
+
+		move_uploaded_file($_FILES['tupian']['tmp_name'],'images/news/tupian_'.$tupian_id.strrchr($_FILES['tupian']['name'],'.'));
+
+		//使用sql语句 insert 完成新闻的增加
+		$sql = "insert into news(title,about,tupian,content,uid,publish_time) values('{$title}','{$about}','{$file}','{$content}','{$uid}','{$time}')";
+
+	}else{
+
+		//使用sql语句 insert 完成新闻的增加
+		$sql = "insert into news(title,about,content,uid,publish_time) values('{$title}','{$about}','{$content}','{$uid}','{$time}')";
+	}
+	
 
 	$pdo->exec($sql);
 

@@ -2,6 +2,11 @@
 
 	//验证是否登录,载入login.auth.php
 
+	//直接跳转到新闻列表
+
+	header("location:news.list.php?paginate=1");
+
+
 	include_once 'login.auth.php';
 
 

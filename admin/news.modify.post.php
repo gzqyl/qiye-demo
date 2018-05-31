@@ -11,9 +11,26 @@
 	//引入pdo文件
 
 	include_once 'pdo.php';
-	
-	//使用sql语句 update 完成新闻的修改
-	$sql = "update news set title='{$title}',content='{$content}' where id = '{$id}'";
+
+	$about = $_POST['about'];
+
+	$tupian_id = time();
+
+	$file = '/admin/images/news/tupian_'.$tupian_id.strrchr($_FILES['tupian']['name'],'.');
+
+	if(is_uploaded_file($_FILES['tupian']['tmp_name'])){
+
+		move_uploaded_file($_FILES['tupian']['tmp_name'],'images/news/tupian_'.$tupian_id.strrchr($_FILES['tupian']['name'],'.'));
+
+		//使用sql语句 update 完成新闻的修改
+		$sql = "update news set title='{$title}',about='{$about}',content='{$content}',tupian='{$file}' where id = '{$id}'";
+
+	}else{
+
+		//使用sql语句 update 完成新闻的修改
+		$sql = "update news set title='{$title}',about='{$about}',content='{$content}' where id = '{$id}'";
+
+	}
 
 	$pdo->exec($sql);
 

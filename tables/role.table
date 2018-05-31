@@ -1,0 +1,6 @@
+#role table
+create table if not exists role(
+role_id int(10) primary key,
+role_name varchar(255),
+module_id varchar(255)
+);

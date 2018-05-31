@@ -1,0 +1,7 @@
+# module table
+create table if not exists module(
+	module_id int(10) primary key,
+	module_pid int(10),
+	module_title varchar(255),
+	module_link varchar(255)
+);

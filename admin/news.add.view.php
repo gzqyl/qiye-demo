@@ -17,10 +17,20 @@
 
 		<div class="col-lg-9 col-md-9" style="margin-top:60px;">
 			
-			<form role="form" action="news.add.post.php" method="post" onsubmit="useBaidu(this);return false;">
+			<form role="form" enctype="multipart/form-data" action="news.add.post.php" method="post" onsubmit="useBaidu(this);return false;">
 			  <div class="form-group">
 			    <label>新闻标题</label>
 			    <input type="text" class="form-control" placeholder="请输入标题" name="title" />
+			  </div>
+
+			  <div class="form-group">
+			    <label>新闻图片</label>
+			    <input type="file" class="form-control" name="tupian" />
+			  </div>
+
+			  <div class="form-group">
+			    <label>新闻简介</label><br />
+			    <textarea name="about" cols="100" rows="10"></textarea>
 			  </div>
 
 			  <div class="form-group">

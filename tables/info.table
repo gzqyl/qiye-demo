@@ -1,0 +1,6 @@
+#info table
+create table if not exists info(
+info_id int(10) auto_increment primary key,
+info_name varchar(255),
+info_content varchar(255)
+);

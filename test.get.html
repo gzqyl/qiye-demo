@@ -1,0 +1,26 @@
+<!Doctype html>
+<html>
+	<head>
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	</head>
+	<body>
+	
+		<p id="ctn">初始内容</p>		
+		<button onclick="changeCtn();">点击改变段落的内容</button>		
+	
+		<script>
+
+			function changeCtn(){
+
+				$.get('/test.get.php',function(data){
+				
+					$('#ctn').html(data);
+
+				});
+
+			}
+
+		</script>
+
+	</body>
+</html>

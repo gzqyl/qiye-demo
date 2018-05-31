@@ -17,11 +17,21 @@
 
 		<div class="col-lg-9 col-md-9" style="margin-top:60px;">
 			
-			<form role="form" action="news.modify.post.php?id=<?=$newsData['id']?>" method="post" onsubmit="useBaidu(this);return false;">
+			<form role="form" enctype="multipart/form-data" action="news.modify.post.php?id=<?=$newsData['id']?>" method="post" onsubmit="useBaidu(this);return false;">
 			  <div class="form-group">
 			    <label>新闻标题</label>
 			    <!--输出默认数据-->
 			    <input type="text" class="form-control" value="<?=$newsData['title']?>" name="title" />
+			  </div>
+
+			  <div class="form-group">
+			    <label>新闻图片</label>
+			    <input type="file" class="form-control" name="tupian" />
+			  </div>
+
+			   <div class="form-group">
+			    <label>新闻简介</label><br />
+			    <textarea name="about" cols="100" rows="10"><?=$newsData['about']?></textarea>
 			  </div>
 
 			  <div class="form-group">

@@ -6,6 +6,8 @@
 
 	$template = new Template();
 
+	include 'pdo.php';
+
 	include 'common.php';
 
 	$template->assign('css','news');

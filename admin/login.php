@@ -1,6 +1,7 @@
 <!doctype html>
 <head>
 	<title>管理员登录</title>
+	<meta charset="utf-8" />
 	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" />
 </head>
 <body>

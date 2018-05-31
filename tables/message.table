@@ -1,0 +1,8 @@
+#db qiye
+#table message
+create table if not exists message(
+id int(10) auto_increment primary key,
+title varchar(255) not null comment '留言的标题',
+name varchar(100) comment '留言人的姓名',
+content varchar(10000) comment '留言的内容'
+);

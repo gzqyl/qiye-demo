@@ -39,3 +39,25 @@
 		return $_res[0];
 
 	}
+
+
+	function hasOne($sql){
+
+		global $pdo;
+
+		
+		$_res = $pdo->query($sql);
+
+		if(!$_res){
+
+			return false;
+		}
+
+		foreach($_res as $v){
+
+			return $v;
+
+		}
+
+
+	}

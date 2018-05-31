@@ -25,7 +25,49 @@
 	foreach($res as $v){
 
 		$template->assign('news',$v);
+
+		$sql = "select * from admin where id = '{$v['uid']}'"; //获取发布者的信息
+
+		$user_res = $pdo->query($sql);
+
+		foreach($user_res as $vv){
+
+			$template->assign('publish_user',$vv['name']);
+
+			break;
+
+		}
+
 		break;
+
+	}
+
+	//获取上一篇
+
+	if($upNews = hasOne("select * from news where id =".($_GET['id']-1))){
+
+		$template->assign('upNews',$upNews);
+
+		$template->assign('upNewsShow',true);
+
+	}else{
+
+		$template->assign('upNewsShow',false);
+
+	}
+
+
+	//获取下一篇
+
+	if($nextNews = hasOne("select * from news where id =".($_GET['id']+1))){
+
+		$template->assign('nextNews',$nextNews);
+
+		$template->assign('nextNewsShow',true);
+
+	}else{
+
+		$template->assign('nextNewsShow',false);
 
 	}
 	

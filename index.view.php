@@ -65,21 +65,21 @@
 	                <img src="images/icon1.png" />
 	                <dl>
 	                    <dt>公司地址</dt>
-	                    <dd>北京市通州区台湖镇前营工业区</dd>
+	                    <dd><?=$data_s['addr']?></dd>
 	                </dl>
 	            </li>
 	            <li>
 	                <img src="images/icon2.png" />
 	                <dl>
 	                    <dt>联系电话</dt>
-	                    <dd>86-010-87715898</dd>
+	                    <dd><?=$data_s['tel']?></dd>
 	            	</dl>
 	            </li>
 	            <li>
 	                <img src="images/icon3.png" />
 	                <dl>
 	                    <dt>电子邮箱</dt>
-	                    <dd>bjmc2008@126.com</dd>
+	                    <dd><?=$data_s['email']?></dd>
 	                </dl>
 	            </li>
 	        </ul>
